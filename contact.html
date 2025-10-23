@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Jordan Wood</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="Logo.png">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+     <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects / Skills</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html" class="active">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out using the form below or through one of the links provided. I’d love to connect!</p>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:jordanwood159@gmail.com">jordanwood159@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jordanwood526" target="_blank">My LinkedIn Page</a></p>
+         <p><strong>Cell Phone #:</strong> (360) 506 - 4598</a></p>
+      </div>
+
+      <form class="contact-form" action="mailto:jordanwood159@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+</body>
+
+<!-- Footer -->
+    <footer>
+        &copy; 2025 Jordan Wood. All Rights Reserved.
+    </footer>
+  
+
+</html>
