@@ -4,17 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me | Jordan Wood</title>
+
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="Logo.png">
 </head>
+
 <body>
   <canvas id="space-bg"></canvas>
 
-  <!-- Navbar -->
   <nav class="navbar">
     <ul>
-     <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li>
       <li><a href="projects.html">Projects / Skills</a></li>
       <li><a href="resume.html">Resume</a></li>
@@ -22,19 +23,31 @@
     </ul>
   </nav>
 
-  <!-- Contact Section -->
   <section class="contact-section">
-    <div class="contact-container">
+    <div class="contact-container reveal">
       <h2>Contact Me</h2>
-      <p>If you'd like to get in touch, feel free to reach out using the form below or through one of the links provided. I’d love to connect!</p>
+      <p>
+        If you'd like to get in touch, feel free to reach out using the form below
+        or through one of the links provided. I’d love to connect!
+      </p>
 
       <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:jordanwood159@gmail.com">jordanwood159@gmail.com</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jordanwood526" target="_blank">My LinkedIn Page</a></p>
-         <p><strong>Cell Phone #:</strong> (360) 506 - 4598</a></p>
+        <p><strong>Email:</strong>
+          <a href="mailto:jordanwood159@gmail.com">jordanwood159@gmail.com</a>
+        </p>
+        <p><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/jordanwood526" target="_blank">
+            My LinkedIn Page
+          </a>
+        </p>
+        <p><strong>Cell Phone #:</strong> (360) 506 - 4598</p>
       </div>
 
-      <form class="contact-form" action="mailto:jordanwood159@gmail.com" method="post" enctype="text/plain">
+      <form class="contact-form"
+            action="mailto:jordanwood159@gmail.com"
+            method="post"
+            enctype="text/plain">
+
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
 
@@ -49,13 +62,10 @@
     </div>
   </section>
 
+  <footer>
+    &copy; 2025 Jordan Wood. All Rights Reserved.
+  </footer>
+
   <script src="space.js"></script>
 </body>
-
-<!-- Footer -->
-    <footer>
-        &copy; 2025 Jordan Wood. All Rights Reserved.
-    </footer>
-  
-
 </html>

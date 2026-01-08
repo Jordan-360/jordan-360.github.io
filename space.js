@@ -1,14 +1,15 @@
 const canvas = document.getElementById("space-bg");
 const ctx = canvas.getContext("2d");
 
-
-
 /* ================== CONFIG ================== */
 const STAR_COUNT = 120;
 const COMET_CHANCE = 0.003;
 
 let stars = [];
 let comets = [];
+
+/* (You referenced planets previously; declare it to avoid errors) */
+let planets = [];
 
 /* ================== RESIZE ================== */
 function resize() {
@@ -29,8 +30,6 @@ function createStar() {
     alpha: Math.random() * 0.5 + 0.5
   };
 }
-
-
 
 function createComet() {
   return {
@@ -55,9 +54,6 @@ init();
 /* ================== ANIMATION ================== */
 function animate() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  /* ---- PLANETS (ORBITING RINGS) ---- */
-  
 
   /* ---- STARS ---- */
   stars.forEach(star => {
@@ -99,3 +95,23 @@ function animate() {
 }
 
 animate();
+
+/* ================== Scroll Reveal (Runs on every page) ================== */
+(function setupReveal() {
+  const revealEls = document.querySelectorAll('.reveal');
+  if (!revealEls.length) return;
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  revealEls.forEach(el => observer.observe(el));
+})();
