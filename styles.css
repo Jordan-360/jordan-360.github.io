@@ -683,3 +683,26 @@ footer {
 .hero-photo {
   gap: 5rem !important;
 }
+
+/* Resume page footer enhancement only */
+.resume-page .footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.resume-page .footer-alt-resume {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.resume-page .footer-link {
+  color: #00aaff;
+  font-weight: 600;
+}
+
+.resume-page .footer-link:hover {
+  color: #18bc9c;
+  text-decoration: underline;
+}
