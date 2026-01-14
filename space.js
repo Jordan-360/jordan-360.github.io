@@ -25,8 +25,8 @@ function createStar() {
     x: Math.random() * canvas.width,
     y: Math.random() * canvas.height,
     size: Math.random() * 1.4 + 0.3,
-    speedX: (Math.random() - 0.5) * 0.15,
-    speedY: (Math.random() - 0.5) * 0.15,
+    speedX: (Math.random() - 0.5) * 0.05,
+    speedY: (Math.random() - 0.5) * 0.05,
     alpha: Math.random() * 0.5 + 0.5
   };
 }
